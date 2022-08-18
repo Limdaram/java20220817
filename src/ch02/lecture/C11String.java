@@ -27,7 +27,7 @@ public class C11String {
 		String j = d + " java";
 		System.out.println(j);
 
-		// 참조타임 (객체) : 필드와 메소드가 있음
+		// 참조타입 (객체) : 필드와 메소드가 있음
 		String k = "bts";
 		char l = k.charAt(0); // charAt 메소드 // 정수 넣기 // 결과는 char 타입
 		int m = k.charAt(0);
