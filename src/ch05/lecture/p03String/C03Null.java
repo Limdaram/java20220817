@@ -7,7 +7,7 @@ public class C03Null {
 		String c = "java";
 		
 		a = null; // 참조하는 객체가 없음
-		b = null; // 팜조하는 객체가 없음
+		b = null; // 참조하는 객체가 없음
 		
 		System.out.println(c.length());
 		System.out.println(b.length()); // NullPointerException

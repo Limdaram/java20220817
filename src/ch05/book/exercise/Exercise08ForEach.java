@@ -20,7 +20,7 @@ public class Exercise08ForEach {
 		}
 		avg = sum / cnt;
 		
-		System.out.println("총 합 : " + sum);
+		System.out.println("총합 : " + sum);
 		System.out.println("평균 : " + avg);
 	}
 }
