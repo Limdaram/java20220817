@@ -8,10 +8,4 @@ public class Member {
 	String password;
 	int age;
 	
-	Member (String name, String id, String pw, int age) {
-		this.name = name;
-		this.id = id;
-		this.password = pw;
-		this.age = age;
-	}
 }
