@@ -15,15 +15,15 @@ public class MyClass1 {
 	final int a = 5;
 	final int b;
 	
-	MyClass1() {
+	public MyClass1() {
 		b = 9;
 	}
 	
-	MyClass1(int b) {
+	public MyClass1(int b) {
 		this.b = b;
 	}
 	
-	MyClass1(int c, int d) {
+	public MyClass1(int c, int d) {
 		this.b = 999;
 	}
 }
