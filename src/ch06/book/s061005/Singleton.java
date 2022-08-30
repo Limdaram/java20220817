@@ -10,7 +10,7 @@ public class Singleton {
 	}
 	
 	// 정적 메소드는 호출할 수 있게 하기
-	static Singleton getInstance() {
+	public static Singleton getInstance() {
 		return singleton;
 	}
 }
