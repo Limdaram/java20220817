@@ -16,9 +16,22 @@ public class MyClass6 {
 			return (int) (Math.random()*6)+1;
 		};
 		System.out.println(o3.method());
+		
+		MyInterface11 o4 = () -> (String) "d";
+		System.out.println(o4.method1());
 	}
 }
 
 interface MyInterface6 {
 	int method();
+}	
+
+interface MyInterface11 {
+	String method1();
 }
+
+
+
+
+	
+	

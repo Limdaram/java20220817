@@ -13,7 +13,7 @@ public class MyClass3 {
 		o2.method("oh");
 		o2.method("A");
 		
-		// 파라미터가 하나라면 두문괄호도 생략 가능
+		// 파라미터가 하나라면 괄호도 생략 가능
 		MyInterface3 o3 = s -> System.out.println(s.repeat(3));
 		
 		o3.method("ha");
