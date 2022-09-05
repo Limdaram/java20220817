@@ -1,6 +1,6 @@
 package ch10.book.exercise;
 
-public class TryCatchFinallyExample {
+public class s06TryCatchFinallyExample {
 	public static void main(String[] args) {
 		String[] strArray = {"10", "2a"};
 		
