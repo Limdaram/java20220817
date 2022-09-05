@@ -1,0 +1,9 @@
+package ch10.book;
+
+public class NullPointerExceptionExample {
+	public static void main(String[] args) {
+		String data = null;
+		System.out.println(data.toString()); // 숫자를 문자열로 return
+		
+	}
+}
