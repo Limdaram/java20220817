@@ -30,7 +30,7 @@ public class C01Wrapper {
 		
 		Object[] arr3 = new Object[3];
 		arr3[0] = "phoenix";
-		arr3[1] = Integer.valueOf(99);
+		arr3[1] = 99;
 		arr3[2] = Integer.valueOf(100);
 		
 		System.out.println(Arrays.toString(arr3));
