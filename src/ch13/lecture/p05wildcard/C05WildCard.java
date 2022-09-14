@@ -1,4 +1,4 @@
-package ch13.lecture.p05Swildcard;
+package ch13.lecture.p05wildcard;
 
 import java.util.ArrayList;
 
