@@ -20,6 +20,8 @@ public class C03Map {
 				"osaka", "japan",
 				"newyork", "us");
 		
+		System.out.println(map2);
+		
 //		map2.put("london", "uk");
 //		map2.put("busan", "china");
 		
