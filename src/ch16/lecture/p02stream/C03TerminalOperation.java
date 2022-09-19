@@ -14,7 +14,7 @@ public class C03TerminalOperation {
 		System.out.println(o1.get());
 		
 		Stream<String> stream3 = Stream.of("ironman", "panther", "widow", "spider", "captain");
-		String o2 = stream3.reduce("heros", (a,b) -> a + "," + b);
+		String o2 = stream3.reduce("heros", (a,b) -> a + "," + b); // 초기값 주기 // 초기값이 있기 때문에 Optional 안써도 됨ㄱ
 		System.out.println(o2);
 	}
 }
