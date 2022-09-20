@@ -1,11 +1,9 @@
-package ch16.book.exercise;
+package ch16.book;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-
-import ch16.book.Student;
 
 public class GroupintByExample {
 	public static void main(String[] args) {
@@ -28,28 +26,33 @@ public class GroupintByExample {
 		
 		System.out.println();
 		
-		Map<Student.City, List<String>> mapByCity = totalList.stream()
-				.collect(
-						Collectors.groupingBy(
-								Student::getCity,
-								Collectors.mapping(Student::getName, Collectors.toList())));
+		Map<Student.City, List<Student>> mapByCity = totalList.stream()
+				.collect(Collectors.groupingBy(Student::getCity));
 		
 		System.out.print("\n[서울] ");
 		mapByCity.get(Student.City.Seoul).stream()
-			.forEach(n -> System.out.print(n + " "));
+		.forEach(s -> System.out.print(s.getName() + " "));
 		
 		System.out.print("\n[부산] ");
 		mapByCity.get(Student.City.Pusan).stream()
-			.forEach(n -> System.out.print(n + " "));
+		.forEach(s -> System.out.print(s.getName() + " "));
 		
-		System.out.println();
 		
-		System.out.print("\n[서울] ");
-		mapByCity.get(Student.City.Seoul).stream()
-			.forEach(s -> System.out.print(s + " "));
+//		Map<Student.City, List<String>> mapByCity = totalList.stream()
+//				.collect(
+//						Collectors.groupingBy(
+//								Student::getCity,
+//								Collectors.mapping(Student::getName, Collectors.toList())));
+//		
+//		System.out.print("\n[서울] ");
+//		mapByCity.get(Student.City.Seoul).stream()
+//			.forEach(n -> System.out.print(n + " "));
+//		
+//		System.out.print("\n[부산] ");
+//		mapByCity.get(Student.City.Pusan).stream()
+//			.forEach(n -> System.out.print(n + " "));
+//		
+//		System.out.println();
 		
-		System.out.print("\n[부산] ");
-		mapByCity.get(Student.City.Pusan).stream()
-			.forEach(s -> System.out.print(s + " "));
 	}
 }
